@@ -7,7 +7,6 @@ public class PlayerMovement : MonoBehaviour {
 	public float jumpPower = 300f;
 	private Rigidbody2D theRigidBody;
 
-
 	public LayerMask groundLayer;
 
 	public string axisHoriz;
@@ -28,7 +27,9 @@ public class PlayerMovement : MonoBehaviour {
 		leftCheck = transform.Find ("LeftCheck");
 		rightCheck = transform.Find ("RightCheck");
 		resetPosition = transform.position;
+
 	
+
 	}
 
 	// Update is called once per frame
@@ -53,6 +54,7 @@ public class PlayerMovement : MonoBehaviour {
 		}
 
 
+
 	}
 
 	void Flip() {
@@ -60,6 +62,7 @@ public class PlayerMovement : MonoBehaviour {
 		Vector3 theScale = transform.localScale;
 		theScale.x *= -1;
 		transform.localScale = theScale;
+
 	}
 		
 }
