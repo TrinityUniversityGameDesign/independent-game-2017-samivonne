@@ -17,3 +17,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/HowManyPlayers.unity
     guid: 24e3915504c7542b79be49a668090d7c
+  - enabled: 1
+    path: Assets/Scenes/GenderSelection.unity
+    guid: 1ee6069ddbccb49269b35712f0fd21d5

@@ -15,11 +15,9 @@ public class ChangingTitle : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		counter -= Time.deltaTime*speed;
-//		if (counter <= 5) {
-	//		title.color = Color.cyan;
-		//} else if(counter >= 5) {
+
 			title.color = Color.Lerp(Color.cyan, Color.blue, counter);
-		//}
+	
 		if (counter < -2f) {
 			counter = 2f;
 		} 

@@ -15,6 +15,10 @@ public class PlayerSelect : MonoBehaviour {
 		
 
 	}
+
+	public int getPos() {
+		return pos;
+	}
 	
 	// Update is called once per frame
 	void Update () {

@@ -158,7 +158,7 @@ Prefab:
     - target: {fileID: 224509442124844184, guid: 173db815502a5427d830d909c2915d0f,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: -306.6
+      value: -348
       objectReference: {fileID: 0}
     - target: {fileID: 224509442124844184, guid: 173db815502a5427d830d909c2915d0f,
         type: 2}
@@ -269,7 +269,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -305.36, y: -141.2}
+  m_AnchoredPosition: {x: -349, y: -141.2}
   m_SizeDelta: {x: 62.21, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &186072778
@@ -352,7 +352,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1625833985951726, guid: 59ba1fedd5704449194095cdbca12200, type: 2}
       propertyPath: m_Name
-      value: Player4Pod2
+      value: PlayerBluePod2
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: m_Enabled
@@ -402,7 +402,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1625833985951726, guid: 59ba1fedd5704449194095cdbca12200, type: 2}
       propertyPath: m_Name
-      value: Player3Pod2
+      value: PlayerGreenPod2
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: m_Enabled
@@ -462,7 +462,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1625833985951726, guid: 59ba1fedd5704449194095cdbca12200, type: 2}
       propertyPath: m_Name
-      value: Player1Pod2
+      value: PlayerPinkPod2
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: m_Enabled
@@ -503,7 +503,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 150}
+  m_AnchoredPosition: {x: 0, y: 169}
   m_SizeDelta: {x: 279.9, y: 80.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &337343943
@@ -562,6 +562,11 @@ Transform:
   m_PrefabParentObject: {fileID: 4669103457727342, guid: 59ba1fedd5704449194095cdbca12200,
     type: 2}
   m_PrefabInternal: {fileID: 830106414}
+--- !u!1 &484485019 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1639034113334534, guid: a2a882f4a753b43ff8ef2c3800b82120,
+    type: 2}
+  m_PrefabInternal: {fileID: 543232237}
 --- !u!4 &500773794 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4669103457727342, guid: 59ba1fedd5704449194095cdbca12200,
@@ -613,7 +618,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1639034113334534, guid: a2a882f4a753b43ff8ef2c3800b82120, type: 2}
       propertyPath: m_Name
-      value: 'P4Face '
+      value: P4Face
       objectReference: {fileID: 0}
     - target: {fileID: 212987823428184024, guid: a2a882f4a753b43ff8ef2c3800b82120,
         type: 2}
@@ -649,6 +654,10 @@ Prefab:
         type: 2}
       propertyPath: axisHoriz
       value: P4Horizontal
+      objectReference: {fileID: 0}
+    - target: {fileID: 1639034113334534, guid: a2a882f4a753b43ff8ef2c3800b82120, type: 2}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a2a882f4a753b43ff8ef2c3800b82120, type: 2}
@@ -694,7 +703,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1625833985951726, guid: 59ba1fedd5704449194095cdbca12200, type: 2}
       propertyPath: m_Name
-      value: Player1Pod3
+      value: PlayerPinkPod3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 59ba1fedd5704449194095cdbca12200, type: 2}
@@ -740,7 +749,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1625833985951726, guid: 59ba1fedd5704449194095cdbca12200, type: 2}
       propertyPath: m_Name
-      value: Player2Pod3
+      value: PlayerOrangePod3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 59ba1fedd5704449194095cdbca12200, type: 2}
@@ -801,7 +810,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1625833985951726, guid: 59ba1fedd5704449194095cdbca12200, type: 2}
       propertyPath: m_Name
-      value: Player4Pod1
+      value: PlayerBluePod1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 59ba1fedd5704449194095cdbca12200, type: 2}
@@ -847,7 +856,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1625833985951726, guid: 59ba1fedd5704449194095cdbca12200, type: 2}
       propertyPath: m_Name
-      value: Player3Pod4
+      value: PlayerGreenPod4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 59ba1fedd5704449194095cdbca12200, type: 2}
@@ -864,6 +873,7 @@ GameObject:
   - component: {fileID: 834103135}
   - component: {fileID: 834103134}
   - component: {fileID: 834103133}
+  - component: {fileID: 834103138}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -941,6 +951,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &834103138
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 834103132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b387a6b2f3a44545944b68a91bd5606, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  p4Face: {fileID: 484485019}
+  p3Face: {fileID: 1594637399}
+  p2Face: {fileID: 1690446970}
+  p1Face: {fileID: 1056468122}
 --- !u!1001 &856483385
 Prefab:
   m_ObjectHideFlags: 0
@@ -982,7 +1007,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1625833985951726, guid: 59ba1fedd5704449194095cdbca12200, type: 2}
       propertyPath: m_Name
-      value: Player2Pod2
+      value: PlayerOrangePod2
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: m_Enabled
@@ -1032,7 +1057,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1625833985951726, guid: 59ba1fedd5704449194095cdbca12200, type: 2}
       propertyPath: m_Name
-      value: Player3Pod1
+      value: PlayerGreenPod1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 59ba1fedd5704449194095cdbca12200, type: 2}
@@ -1128,7 +1153,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -306.6, y: 49.9}
+  m_AnchoredPosition: {x: -348, y: 49.9}
   m_SizeDelta: {x: 64.7, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &913325416
@@ -1215,7 +1240,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1625833985951726, guid: 59ba1fedd5704449194095cdbca12200, type: 2}
       propertyPath: m_Name
-      value: Player4Pod3
+      value: PlayerBluePod3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 59ba1fedd5704449194095cdbca12200, type: 2}
@@ -1261,7 +1286,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1625833985951726, guid: 59ba1fedd5704449194095cdbca12200, type: 2}
       propertyPath: m_Name
-      value: Player3Pod3
+      value: PlayerGreenPod3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 59ba1fedd5704449194095cdbca12200, type: 2}
@@ -1445,7 +1470,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1625833985951726, guid: 59ba1fedd5704449194095cdbca12200, type: 2}
       propertyPath: m_Name
-      value: Player2Pod1
+      value: PlayerOrangePod1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 59ba1fedd5704449194095cdbca12200, type: 2}
@@ -1491,7 +1516,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1625833985951726, guid: 59ba1fedd5704449194095cdbca12200, type: 2}
       propertyPath: m_Name
-      value: Player1Pod1
+      value: PlayerPinkPod1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 59ba1fedd5704449194095cdbca12200, type: 2}
@@ -1542,7 +1567,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1639034113334534, guid: a2a882f4a753b43ff8ef2c3800b82120, type: 2}
       propertyPath: m_Name
-      value: 'P2Face '
+      value: P2Face
       objectReference: {fileID: 0}
     - target: {fileID: 212987823428184024, guid: a2a882f4a753b43ff8ef2c3800b82120,
         type: 2}
@@ -1639,6 +1664,11 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 219dbdbbc95df40be83a53c3fc647fb7, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1594637399 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1639034113334534, guid: a2a882f4a753b43ff8ef2c3800b82120,
+    type: 2}
+  m_PrefabInternal: {fileID: 1806363744}
 --- !u!1001 &1595720361
 Prefab:
   m_ObjectHideFlags: 0
@@ -1701,6 +1731,11 @@ Transform:
   m_PrefabParentObject: {fileID: 4669103457727342, guid: 59ba1fedd5704449194095cdbca12200,
     type: 2}
   m_PrefabInternal: {fileID: 597511760}
+--- !u!1 &1690446970 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1639034113334534, guid: a2a882f4a753b43ff8ef2c3800b82120,
+    type: 2}
+  m_PrefabInternal: {fileID: 1275249718}
 --- !u!1001 &1729952337
 Prefab:
   m_ObjectHideFlags: 0
@@ -1742,7 +1777,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1625833985951726, guid: 59ba1fedd5704449194095cdbca12200, type: 2}
       propertyPath: m_Name
-      value: Player4Pod4
+      value: PlayerBluePod4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 59ba1fedd5704449194095cdbca12200, type: 2}
@@ -1779,7 +1814,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -312.77, y: -10.6}
+  m_AnchoredPosition: {x: -353, y: -10.6}
   m_SizeDelta: {x: 52.37, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1731912269
@@ -1867,7 +1902,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1625833985951726, guid: 59ba1fedd5704449194095cdbca12200, type: 2}
       propertyPath: m_Name
-      value: Player2Pod4
+      value: PlayerOrangePod4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 59ba1fedd5704449194095cdbca12200, type: 2}
@@ -1918,7 +1953,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1639034113334534, guid: a2a882f4a753b43ff8ef2c3800b82120, type: 2}
       propertyPath: m_Name
-      value: 'P3Face '
+      value: P3Face
       objectReference: {fileID: 0}
     - target: {fileID: 212987823428184024, guid: a2a882f4a753b43ff8ef2c3800b82120,
         type: 2}
@@ -1999,7 +2034,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1625833985951726, guid: 59ba1fedd5704449194095cdbca12200, type: 2}
       propertyPath: m_Name
-      value: Player1Pod4
+      value: PlayerPinkPod4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 59ba1fedd5704449194095cdbca12200, type: 2}
@@ -2049,7 +2084,7 @@ MonoBehaviour:
   m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -2139,7 +2174,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -309.73, y: -75.2}
+  m_AnchoredPosition: {x: -351, y: -75.2}
   m_SizeDelta: {x: 58.45, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2120927191

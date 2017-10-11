@@ -9,6 +9,8 @@ public class PlayerMovement : MonoBehaviour {
 
 	public LayerMask groundLayer;
 
+	//figure out what you want to do. either make it public again and change the names and make your life work 
+	//or make them private and rework a lot of code and make it work 
 	public string axisHoriz;
 	public string axisJump;
 
