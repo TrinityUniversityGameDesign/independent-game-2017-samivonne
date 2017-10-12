@@ -8,10 +8,12 @@ public class MaleOrFemale : MonoBehaviour {
 	private int pos = 0;
 	public string axisHoriz;
 	bool moving = false;
+	public string finalchoice = "";
 
 
 	// Use this for initialization
 	void Start () {
+		//finalchoice = GetComponent<SpriteRenderer> ().sprite.name;
 		sp = new Sprite[2] {null,null};
 
 		if(GetComponent<SpriteRenderer>().sprite.name.Contains("Pink")) {
@@ -37,7 +39,7 @@ public class MaleOrFemale : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		float curPos = Input.GetAxis(axisHoriz);
-		Debug.Log (axisHoriz + curPos);
+		//Debug.Log (axisHoriz + curPos);
 
 		if (curPos >= .9) {
 
@@ -69,8 +71,8 @@ public class MaleOrFemale : MonoBehaviour {
 
 		GetComponent<SpriteRenderer>().sprite = sp[pos];
 
-
-
+		finalchoice = GetComponent<SpriteRenderer> ().sprite.name;
+		Debug.Log ("FINAL CHOICE!!!!!" + finalchoice);
 
 	}
 

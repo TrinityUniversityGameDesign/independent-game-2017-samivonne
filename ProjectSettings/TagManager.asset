@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Gun
+  - Bucket
+  - Players
+  - Tub
   layers:
   - Default
   - TransparentFX

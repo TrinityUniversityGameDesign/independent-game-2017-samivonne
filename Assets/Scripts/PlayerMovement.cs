@@ -7,6 +7,8 @@ public class PlayerMovement : MonoBehaviour {
 	public float jumpPower = 300f;
 	private Rigidbody2D theRigidBody;
 
+	public int PlayerNumber;
+
 	public LayerMask groundLayer;
 
 	//figure out what you want to do. either make it public again and change the names and make your life work 
@@ -49,7 +51,7 @@ public class PlayerMovement : MonoBehaviour {
 		bool jumping = Input.GetButtonDown (axisJump);
 		bool grounded = Physics2D.OverlapCircle (leftCheck.position, .1f, groundLayer) || Physics2D.OverlapCircle (rightCheck.position, .1f, groundLayer) ;
 		//CHECK TO SEE IF PLAYER IS GROUNDED
-		Debug.Log ("Grounded? " + grounded);
+	//	Debug.Log ("Grounded? " + grounded);
 
 		if (grounded && jumping) {
 			theRigidBody.AddForce (new Vector2(0f, jumpPower));

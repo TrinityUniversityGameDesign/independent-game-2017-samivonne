@@ -87,9 +87,10 @@ GameObject:
   - component: {fileID: 50007436271864040}
   - component: {fileID: 114759247388129826}
   - component: {fileID: 70351182384979052}
+  - component: {fileID: 114211257806722876}
   m_Layer: 9
   m_Name: PlayerOne 1
-  m_TagString: Untagged
+  m_TagString: Players
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -198,6 +199,17 @@ CapsuleCollider2D:
   m_Offset: {x: -0.11307805, y: -0.09678399}
   m_Size: {x: 0.5675443, y: 0.96122503}
   m_Direction: 0
+--- !u!114 &114211257806722876
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1979743648076886}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 741838fb5f5014da7a127058bf856808, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114682710995981616
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -211,6 +223,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waterspout: {fileID: 198553182121681042}
   axisFire: P1Fire
+  HowMuchWater: 0
 --- !u!114 &114759247388129826
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -224,6 +237,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkSpeed: 10
   jumpPower: 400
+  PlayerNumber: 0
   groundLayer:
     serializedVersion: 2
     m_Bits: 256

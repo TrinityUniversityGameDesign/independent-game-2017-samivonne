@@ -23,7 +23,7 @@ public class PlayerSelect : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		float curPos = Input.GetAxis(axisHoriz);
-		Debug.Log (axisHoriz + curPos);
+		//Debug.Log (axisHoriz + curPos);
 
 		if (curPos >= .9) {
 			
