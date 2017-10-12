@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class UIController : MonoBehaviour {
 	public GameObject[] buckets;
@@ -10,7 +11,8 @@ public class UIController : MonoBehaviour {
 		GameObject[] players = GameObject.FindGameObjectsWithTag ("Players");
 		foreach(GameObject player in players) {
 			player.GetComponent<BucketController>().onBucket += LowerLevels;
-			//player.GetComponent<TubController> ().onTub += HeightenLevels;
+			player.GetComponent<TubController> ().onTub += HeightenLevels;
+			player.GetComponentInChildren<Shooting> ().onShoot += LoseWater;
 		}
 	}
 	
@@ -20,28 +22,38 @@ public class UIController : MonoBehaviour {
 	}
 
 	public void LowerLevels(int player, int level) {
-		//Debug.Log ("!!OOOO!!");
+		
 		if (level > 0) {
 			int team = PlayerPrefs.GetInt ("P" + player + "Team");
+			Debug.Log (buckets[team].GetComponent<RectTransform>().rect.height);
 			//Debug.Log ("BUCKET" + buckets[team].GetComponent<RectTransform>().sizeDelta);
-			buckets[team].GetComponent<RectTransform>().SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, level/5);
-			guns[team].GetComponent<RectTransform>().SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, -level/5);
+			buckets[team].GetComponent<RectTransform>().SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, buckets[team].GetComponent<RectTransform>().rect.height + level/100f);
+			guns[team].GetComponent<RectTransform>().SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical,guns[team].GetComponent<RectTransform>().rect.height - level/100f);
 
+			if (buckets[team].GetComponent<RectTransform>().rect.height >= 40f) {
+				SceneManager.LoadScene ("Congrats");
+			}
 		}
-		if (level < 0) {
-			level = 0;
-		}
+			
+	
+
 		//Debug.Log (":)");
 	}
 	public void HeightenLevels(int player, int level) {
-		if (level < 40) {
+	//	if (level < 40) {
 			int team = PlayerPrefs.GetInt ("P" + player + "Team");
 			//Debug.Log ("BUCKET" + buckets[team].GetComponent<RectTransform>().sizeDelta);
 			//buckets[team].GetComponent<RectTransform>().SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, level/5);
-			guns[team].GetComponent<RectTransform>().SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, level/5);
-		}
-		if (level > 40) {
-			level = 40;
-		}
+			guns[team].GetComponent<RectTransform>().SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, guns[team].GetComponent<RectTransform>().rect.height + level/100f);
+	//	}
+	
+
 	}
+	public void LoseWater(int player, bool ff) {
+		
+			int team = PlayerPrefs.GetInt ("P" + player + "Team");
+			guns [team].GetComponent<RectTransform> ().SetSizeWithCurrentAnchors (RectTransform.Axis.Vertical, guns [team].GetComponent<RectTransform> ().rect.height - .2f);
+
+	}
+
 }

@@ -16,14 +16,16 @@ public class BucketController : MonoBehaviour {
 		
 	}
 
-	public void OnTriggerEnter2D(Collider2D col) {
+	public void OnTriggerStay2D(Collider2D col) {
 		Debug.Log("!!!!!!!");
 		if (col.gameObject.tag == "Bucket") {
-			if(onBucket != null) {
-			//access the canvas's bucketlevels
-				//Debug.Log(" *******" +GetComponent<PlayerMovement>());
-				//Debug.Log(" AAAAAAA" + GetComponent<Shooting>());
-			onBucket(GetComponent<PlayerMovement>().PlayerNumber, GetComponentInChildren<Shooting>().HowMuchWater);			
+			if (onBucket != null) {
+				if (GetComponentInChildren<Shooting> ().howMuchWater > 0) {
+					
+					GetComponentInChildren<Shooting> ().howMuchWater--;
+					onBucket (GetComponent<PlayerMovement> ().PlayerNumber, GetComponentInChildren<Shooting> ().howMuchWater);	
+
+				}
 			}
 		}
 	}

@@ -16,13 +16,14 @@ public class TubController : MonoBehaviour {
 
 	}
 
-	public void OnTriggerEnter2D(Collider2D col) {
+	public void OnTriggerStay2D(Collider2D col) {
 		if (col.gameObject.tag == "Tub") {
 			if(onTub != null) {
 				//access the canvas's bucketlevels
 				//Debug.Log(" *******" +GetComponent<PlayerMovement>());
 				//Debug.Log(" AAAAAAA" + GetComponent<Shooting>());
-				onTub(GetComponent<PlayerMovement>().PlayerNumber, GetComponentInChildren<Shooting>().HowMuchWater);			
+				onTub(GetComponent<PlayerMovement>().PlayerNumber, GetComponentInChildren<Shooting>().howMuchWater);
+				GetComponentInChildren<Shooting> ().howMuchWater++;
 			}
 		}
 	}

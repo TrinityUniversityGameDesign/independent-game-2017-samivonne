@@ -7,22 +7,22 @@ public class Shooting : MonoBehaviour {
 	public string axisFire;
 	bool isShooting = false;
 
-	public int HowMuchWater;
+	public int howMuchWater;
 
 	public delegate void OnShoot(int whoShot, bool firstFrame);
 	public event OnShoot onShoot;
 
 	// Use this for initialization
 	void Start () {
-		//waterspout = GetComponentInChildren<ParticleSystem>();
-		//Debug.Log (waterspout);
+		//!!!!!!!! -> want to set the howMuchWater int to be equal to the level 
+
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		float shooting = Input.GetAxis(axisFire);
 		//Debug.Log (Input.GetAxis(axisFire));
-		if(HowMuchWater > 0) {
+		if(howMuchWater > 0) {
 			if (shooting >= .9f) {
 				if (onShoot != null) {
 					int pNum = (int)System.Char.GetNumericValue (gameObject.name [gameObject.name.Length - 1]);
@@ -34,7 +34,7 @@ public class Shooting : MonoBehaviour {
 				}
 				isShooting = true;
 				waterspout.Play ();
-				HowMuchWater--;
+				howMuchWater--;
 			
 			}
 		} else {

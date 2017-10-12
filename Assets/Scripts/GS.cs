@@ -73,6 +73,7 @@ public class GS : MonoBehaviour {
 			player2.SetActive (false);
 			player3.SetActive (false);
 			player4.SetActive (false);
+		
 			GameObject.Find ("P2RightArrow").SetActive (false);
 			GameObject.Find ("P2LeftArrow").SetActive (false);
 			GameObject.Find ("P3RightArrow").SetActive (false);
@@ -114,10 +115,15 @@ public class GS : MonoBehaviour {
 		if (numPlayerReady == playerNum) {
 			SceneManager.LoadScene ("MainScene");
 			//Debug.Log (GameObject.Find("PlayerPmale").GetComponent<MaleOrFemale>().finalchoice);
-			PlayerPrefs.SetString ("P1Final", GameObject.Find("PlayerPmale").GetComponent<MaleOrFemale>().finalchoice);
-			PlayerPrefs.SetString ("P2Final", GameObject.Find("PlayerOmale").GetComponent<MaleOrFemale>().finalchoice);
-			PlayerPrefs.SetString ("P3Final", GameObject.Find("PlayerGmale").GetComponent<MaleOrFemale>().finalchoice);
-			PlayerPrefs.SetString ("P4Final", GameObject.Find("PlayerBmale").GetComponent<MaleOrFemale>().finalchoice);
+			PlayerPrefs.SetString ("P1Final", GameObject.Find ("PlayerPmale").GetComponent<MaleOrFemale> ().finalchoice);
+			if (playerNum > 1) {
+				PlayerPrefs.SetString ("P2Final", GameObject.Find ("PlayerOmale").GetComponent<MaleOrFemale> ().finalchoice);
+			} else if (playerNum > 2) {
+				PlayerPrefs.SetString ("P3Final", GameObject.Find ("PlayerGmale").GetComponent<MaleOrFemale> ().finalchoice);
+			}
+			if (playerNum > 3) {
+				PlayerPrefs.SetString ("P4Final", GameObject.Find ("PlayerBmale").GetComponent<MaleOrFemale> ().finalchoice);
+			} 
 		}
 	}
 }
