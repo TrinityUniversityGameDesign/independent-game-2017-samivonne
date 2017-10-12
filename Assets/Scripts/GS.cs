@@ -113,7 +113,7 @@ public class GS : MonoBehaviour {
 
 		}
 		if (numPlayerReady == playerNum) {
-			SceneManager.LoadScene ("MainScene");
+			SceneManager.LoadScene ("HowTo");
 			//Debug.Log (GameObject.Find("PlayerPmale").GetComponent<MaleOrFemale>().finalchoice);
 			PlayerPrefs.SetString ("P1Final", GameObject.Find ("PlayerPmale").GetComponent<MaleOrFemale> ().finalchoice);
 			if (playerNum > 1) {
